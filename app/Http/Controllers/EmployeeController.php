@@ -13,7 +13,6 @@ class EmployeeController extends Controller
     protected $employee;
     public function __construct(Employee $employee){
         $this->employee = new Employee();
-
     }
 
 
@@ -42,7 +41,7 @@ class EmployeeController extends Controller
     public function show(string $id)
     {
         
-        $employee = $this->employee->find($id);
+      return  $employee = $this->employee->find($id);
     }
 
     /**
